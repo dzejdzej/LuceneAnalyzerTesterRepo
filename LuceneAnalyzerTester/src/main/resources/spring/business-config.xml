@@ -14,10 +14,10 @@
     <context:component-scan base-package="core.repositories.jpa"/>
 
    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-        <property name="driverClassName" value="net.sourceforge.jtds.jdbc.Driver" />
-        <property name="url" value="jdbc:jtds:sqlserver://localhost:1433/LuceneAnalyzerTesterDB" />
-        <property name="username" value="sa" />
-        <property name="password" value="salac91" />
+        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+        <property name="url" value="jdbc:mysql://localhost:3306/LuceneAnalyzerTesterDB" />
+        <property name="username" value="root" />
+        <property name="password" value="root" />
     </bean>
     
     <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
